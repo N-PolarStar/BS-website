@@ -1,0 +1,115 @@
+/*
+fonts
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Space Mono', monospace;
+font-family: 'Trispace', sans-serif;
+*/ 
+/* Universal Styles */
+
+html {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(0, 0%, 0%);
+    
+  }
+body {
+    margin: 0;
+}
+* {
+    margin: 0;
+}
+p, span, a, h1, h2, h3, h4, h5, strong {
+    color: hsl(0, 100%, 100%);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/*navigation*/
+
+header  {
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+header div.logo img {
+margin-right: 0.5rem;
+}
+header div.logo span{
+    font-family: 'Trispace', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header nav ul li {
+    display: inline;
+    padding-right: 1rem;
+}
+
+header nav ul li:last-child {
+    padding-right: 0.5rem;
+}
+
+/* Home section no.1 introduction */
+section.intro {
+    height: 600px;
+    width: auto;
+    background-image: url('../media/stars-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem 2rem;
+}
+
+section.intro div.headline {
+    position: relative;
+    top: 30%;
+}
+
+section.intro div.headline h1 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+}
+
+section.intro div.subheadline {
+    position: relative;
+    top: 30%;
+}
+
+section.intro div.subheadline p {
+    padding: 0 2rem 2rem 2rem;
+}
+
+section.intro div.button {
+    position: relative;
+    top: 30%;
+    padding: 1rem 2rem 0 2rem;
+}
+
+section.intro div.button a {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    background-color: hsl(0, 100%, 100%);
+    padding: 1rem;
+    cursor: pointer;
+    transition: color 1.5s 150ms,
+    background-color 0s 150ms;
+}
+
+section.intro div.button a:hover {
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(0, 0%, 0%);
+    padding: 1rem;
+}
+
+/* Home section no.2 services */
