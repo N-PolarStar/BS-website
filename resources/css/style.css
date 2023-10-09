@@ -68,6 +68,8 @@ section.intro {
     background-position: center;
     background-size: cover;
     padding: 2rem 2rem;
+    background-color: hsl(11, 10%, 40%);
+    background-blend-mode: multiply;
 }
 
 section.intro div.headline {
@@ -79,6 +81,8 @@ section.intro div.headline h1 {
     font-family: 'Trispace', sans-serif;
     font-size: 3rem;
     padding: 2rem 2rem;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
 }
 
 section.intro div.subheadline {
@@ -88,6 +92,10 @@ section.intro div.subheadline {
 
 section.intro div.subheadline p {
     padding: 0 2rem 2rem 2rem;
+    width: 75%;
+    line-height: 200%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
 }
 
 section.intro div.button {
@@ -113,3 +121,150 @@ section.intro div.button a:hover {
 }
 
 /* Home section no.2 services */
+section.ban2-services {
+    padding: 2rem 2rem;
+}
+
+section.ban2-services div.headline2 {
+    padding: 2rem 0 4rem 0;
+}
+
+section.ban2-services div.headline2 h2 {
+    font-family: 'Trispace', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+section.ban2-services div.img-con {
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+section.ban2-services div.img-con img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+div.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.bigbox2 {
+    width: 40%;
+    padding: 0.5rem;
+    border: 2px solid hsl(0, 0%, 100%);
+    flex-grow: 1;
+    background-color: hsl(0, 0%, 20%);
+    margin: 0.5rem;
+}
+
+div.bigbox2.long {
+    flex-grow: 1.5;
+}
+
+div.text-con {
+    padding: 1rem 0;
+}
+
+div.text-con h2.title {
+    font-weight: bold;
+    padding: 0 0 1rem 0;
+}
+
+div.text-con p.description {
+    padding-right: 1rem;
+}
+section.ban2-services div.findmore.button {
+    text-align: center;
+    margin: 0.5rem;
+    padding: 3rem 0 1rem 0;
+}
+
+section.ban2-services div.findmore.button a{
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    background-color: hsl(0, 100%, 0%);
+    padding: 1rem;
+    cursor: pointer;
+    transition: color 1.5s 150ms,
+}   
+
+section.ban2-services div.findmore.button a:hover {
+    color: hsl(0, 0, 100%);
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+/* section no.3 testimonials */
+
+/* section no.4 Services */
+h1 {
+    font-size: 30px;
+   margin: 1em auto;
+   text-align: center;
+   font-family: monospace;
+}
+
+.sdescription {
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+    padding: 1em;
+}
+
+hr {
+    height: 2px;
+    width: 90px;
+    background-color: #a6d1fd;
+    border-color: #a6d1fd;
+    filter:blur(5px);
+}
+
+h2 {
+    margin: 1em auto;
+    text-align: center;
+    font-family: monospace;
+}
+
+.services {
+    width: 100%;
+    background-color:  #a6d1fd30;
+    padding: 5vh;
+    display: inline-block;
+    margin: auto;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    text-align: center;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.sp {
+    width: 10%;
+    padding: auto;
+    margin: auto;
+}
+
+.sd {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+}
+
+footer {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+}
