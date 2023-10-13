@@ -1,24 +1,33 @@
 /*
 fonts
-font-family: 'Space Grotesk', sans-serif;
-font-family: 'Space Mono', monospace;
-font-family: 'Trispace', sans-serif;
+font-family: 'Space Grotesk', sans-serif (CONTENT);
+font-family: 'Space Mono', monospace (HEADERS);
+font-family: 'Trispace', sans-serif (TITLE);
 */ 
 /* Universal Styles */
 
 html {
-    font-size: 16px;
+    font-size: 0.75rem;
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
     background-color: hsl(0, 0%, 0%);
-    
   }
+
 body {
     margin: 0;
+    background-image: url('../media/stars-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem 2rem;
+    background-color: hsl(11, 10%, 40%);
+    background-blend-mode: multiply;
 }
+
 * {
     margin: 0;
 }
+
 p, span, a, h1, h2, h3, h4, h5, strong {
     color: hsl(0, 100%, 100%);
 }
@@ -27,7 +36,7 @@ nav a {
     text-decoration: none;
 }
 
-/*navigation*/
+/******************NAVIGATION BAR*********************/
 
 header  {
     padding: 1rem 1rem;
@@ -46,7 +55,7 @@ header div.logo img {
 margin-right: 0.5rem;
 }
 header div.logo span{
-    font-family: 'Trispace', sans-serif;
+    font-family: monospace;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -59,17 +68,10 @@ header nav ul li:last-child {
     padding-right: 0.5rem;
 }
 
-/* Home section no.1 introduction */
+/******************* INTRODUCTION *****************/
 section.intro {
     height: 600px;
     width: auto;
-    background-image: url('../media/stars-background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem 2rem;
-    background-color: hsl(11, 10%, 40%);
-    background-blend-mode: multiply;
 }
 
 section.intro div.headline {
@@ -120,7 +122,7 @@ section.intro div.button a:hover {
     padding: 1rem;
 }
 
-/* Home section no.2 services */
+/******************** TEMPLATES AND EXAMPLES ********************/
 section.ban2-services {
     padding: 2rem 2rem;
 }
@@ -130,7 +132,7 @@ section.ban2-services div.headline2 {
 }
 
 section.ban2-services div.headline2 h2 {
-    font-family: 'Trispace', sans-serif;
+    font-family: monospace;
     text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
@@ -139,7 +141,6 @@ section.ban2-services div.headline2 h2 {
 section.ban2-services div.img-con {
     overflow: hidden;
     width: 100%;
-    
 }
 
 section.ban2-services div.img-con img {
@@ -201,29 +202,30 @@ section.ban2-services div.findmore.button a:hover {
     padding: 1rem;
 }
 
-/* section no.3 testimonials */
+/********************** TESTAMONIALS *****************/
 
-/* section no.4 Services */
+/******************* SERVICES **********************/
 h1 {
-    font-size: 30px;
+    font-size: 2rem;
    margin: 1em auto;
    text-align: center;
-   font-family: monospace;
+   font-family: 'Trispace', sans-serif;
 }
 
 .sdescription {
     font-family: 'Space Grotesk', sans-serif;
     text-align: center;
-    font-size: 14px;
+    font-size: 1rem;
     margin: auto;
     padding: 1em;
 }
 
 hr {
-    height: 2px;
-    width: 90px;
+    height: 0.5rem;
+    width: 10rem;
     background-color: #a6d1fd;
     border-color: #a6d1fd;
+    margin: 2rem;
     filter:blur(5px);
 }
 
@@ -255,14 +257,17 @@ h2 {
 
 .sp {
     width: 10%;
-    padding: auto;
+    padding: 1rem;
     margin: auto;
 }
 
 .sd {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
+    padding: 1rem;
 }
+
+/***************************FOOTER***************************/
 
 footer {
     font-family: 'Space Grotesk', sans-serif;
