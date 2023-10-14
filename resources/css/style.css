@@ -7,7 +7,7 @@ font-family: 'Trispace', sans-serif (TITLE);
 /* Universal Styles */
 
 html {
-    font-size: 0.75rem;
+    font-size: 16px;
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
     background-color: hsl(0, 0%, 0%);
@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 2rem 2rem;
+    padding: 0rem 2rem 2rem 2rem;
     background-color: hsl(11, 10%, 40%);
     background-blend-mode: multiply;
 }
@@ -39,7 +39,16 @@ nav a {
 /******************NAVIGATION BAR*********************/
 
 header  {
-    padding: 1rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+header div.flexnav {
+    padding: 1rem 2rem 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,6 +94,7 @@ section.intro div.headline h1 {
     padding: 2rem 2rem;
     letter-spacing: 0.5em;
     text-transform: uppercase;
+    text-align: left;
 }
 
 section.intro div.subheadline {
@@ -182,7 +192,7 @@ div.text-con p.description {
 }
 section.ban2-services div.findmore.button {
     text-align: center;
-    margin: 0.5rem;
+    margin: 0rem;
     padding: 3rem 0 1rem 0;
 }
 
@@ -191,7 +201,7 @@ section.ban2-services div.findmore.button a{
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     background-color: hsl(0, 100%, 0%);
-    padding: 1rem;
+    padding: 1rem 0;
     cursor: pointer;
     transition: color 1.5s 150ms,
 }   
@@ -203,6 +213,91 @@ section.ban2-services div.findmore.button a:hover {
 }
 
 /********************** TESTAMONIALS *****************/
+section.ban3-test {
+    padding: 2rem 2rem;
+}
+section.ban3-test div.headline3 {
+    padding: 2rem 0 4rem 0;
+}
+
+section.ban3-test div.headline3 h2 {
+    font-family: monospace;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+section.ban3-test div.bigbox3 {
+    display: inline-flex;
+    width: 100%;
+}
+
+div.stars ul li {
+    display: inline;
+    padding-right: 0.3rem;
+}
+
+div.stars ul li:last-child {
+    padding-right: 0px;
+}
+
+div.stars i {
+    color: white;
+    padding-right: 0.5rem;
+}
+
+div.stars i.checked {
+    color: #D5AB55;
+}
+
+section.ban3-test div.reviewbox {
+    width: 33%;
+    flex-grow: 1;
+    padding: 0 2rem 2rem 0;
+    
+}
+
+section.ban3-test div.reviewbox:last-child {
+    padding-right: 0;
+}
+
+section.ban3-test div.reviewbox div.test-text-con {
+    background: hsla(24, 50%, 56%, 1);
+    background: linear-gradient(315deg, hsla(24, 50%, 56%, 1) 10%, hsla(15, 33%, 32%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(24, 50%, 56%, 1) 10%, hsla(15, 33%, 32%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(24, 50%, 56%, 1) 10%, hsla(15, 33%, 32%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C78355", endColorstr="#6E4537", GradientType=1 );
+    margin-top: 2rem;
+    height: 100%;
+    width: auto;
+    padding: 1rem;
+    box-shadow: 5px 5px #f5f5f5;
+    opacity: 0.9;
+}
+section.ban3-test div.reviewbox div.test-text-con:hover {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 0px 0px;
+    transition: box-shadow 700ms ease-out;
+    opacity: 1;
+    
+}
+
+h3.name {
+    padding-bottom: 1rem;
+    font-family: 'Trispace', sans-serif;
+}
+
+p.review {
+    padding: 0 0.5rem 1rem 0;
+}
+
+p.review a {
+    text-decoration: none;
+}
+
 
 /******************* SERVICES **********************/
 h1 {
