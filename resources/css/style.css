@@ -334,25 +334,26 @@ h2 {
     width: 100%;
     background-color:  #a6d1fd30;
     padding: 5vh;
-    display: inline-block;
+    display: flex;
     margin: auto;
 }
 
 .column {
-    float: left;
+    flex: 1;
+    float: center;
     width: 30%;
     text-align: center;
   }
 
-  .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
   }
 
 .sp {
-    width: 10%;
-    padding: 1rem;
+    width: 30%;
+    padding: 2rem;
     margin: auto;
 }
 
@@ -361,6 +362,75 @@ h2 {
     font-size: 0.75rem;
     padding: 1rem;
 }
+/*********************** CONTACT US BANNER ************************/
+
+form {
+    width: 80vw;
+    margin: auto;
+    padding: 2rem;
+}
+
+fieldset {
+    width: 100%;
+    background: #a6d1fd30;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+input, textarea {
+    margin: 1rem 0;
+    width: 90%;
+    background: transparent;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color:#a6d1fd30;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+
+input { 
+    min-height: 1rem;
+}
+
+textarea {
+    min-height: 10rem;
+}
+
+.input-fields {
+    display: flex;
+}
+
+.message, .subject {
+    width: 100%;
+    max-width: 500px;
+    padding-left: 2rem;
+}
+
+
+input[type="submit"] {
+    margin: 1em auto;
+    width: 10rem;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #a6d1fd30;
+    border-color: #a6d1fd30;}
+
+    input[type="submit"]:hover {
+        background: transparent;
+        color: white;
+        border: none;
+    }
 
 /***************************FOOTER***************************/
 
