@@ -1,0 +1,440 @@
+/*
+fonts
+font-family: 'Space Grotesk', sans-serif (CONTENT);
+font-family: 'Space Mono', monospace (HEADERS);
+font-family: 'Trispace', sans-serif (TITLE);
+*/ 
+/* Universal Styles */
+
+html {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(0, 0%, 0%);
+  }
+
+body {
+    margin: 0;
+    background-image: url('../media/stars-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0rem 2rem 2rem 2rem;
+    background-color: hsl(11, 10%, 40%);
+    background-blend-mode: multiply;
+}
+
+* {
+    margin: 0;
+}
+
+p, span, a, h1, h2, h3, h4, h5, strong {
+    color: hsl(0, 100%, 100%);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/******************NAVIGATION BAR*********************/
+
+header  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+header div.flexnav {
+    padding: 1rem 2rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+header div.logo img {
+margin-right: 0.5rem;
+}
+header div.logo span{
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header nav ul li {
+    display: inline;
+    padding-right: 1rem;
+}
+
+header nav ul li:last-child {
+    padding-right: 0.5rem;
+}
+
+/******************* INTRODUCTION *****************/
+section.intro {
+    height: 600px;
+    width: auto;
+}
+
+section.intro div.headline {
+    position: relative;
+    top: 30%;
+}
+
+section.intro div.headline h1 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+section.intro div.subheadline {
+    position: relative;
+    top: 30%;
+}
+
+section.intro div.subheadline p {
+    padding: 0 2rem 2rem 2rem;
+    width: 75%;
+    line-height: 200%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+section.intro div.button {
+    position: relative;
+    top: 30%;
+    padding: 1rem 2rem 0 2rem;
+}
+
+section.intro div.button a {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    background-color: hsl(0, 100%, 100%);
+    padding: 1rem;
+    cursor: pointer;
+    transition: color 1.5s 150ms,
+    background-color 0s 150ms;
+}
+
+section.intro div.button a:hover {
+    color: hsl(0, 100%, 100%);
+    background-color: hsl(0, 0%, 0%);
+    padding: 1rem;
+}
+
+/******************** TEMPLATES AND EXAMPLES ********************/
+section.ban2-services {
+    padding: 2rem 2rem;
+}
+
+section.ban2-services div.headline2 {
+    padding: 2rem 0 4rem 0;
+}
+
+section.ban2-services div.headline2 h2 {
+    font-family: monospace;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+section.ban2-services div.img-con {
+    overflow: hidden;
+    width: 100%;
+}
+
+section.ban2-services div.img-con img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+div.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.bigbox2 {
+    width: 40%;
+    padding: 0.5rem;
+    border: 2px solid hsl(0, 0%, 100%);
+    flex-grow: 1;
+    background-color: hsl(0, 0%, 20%);
+    margin: 0.5rem;
+}
+
+div.bigbox2.long {
+    flex-grow: 1.5;
+}
+
+div.text-con {
+    padding: 1rem 0;
+}
+
+div.text-con h2.title {
+    font-weight: bold;
+    padding: 0 0 1rem 0;
+}
+
+div.text-con p.description {
+    padding-right: 1rem;
+}
+section.ban2-services div.findmore.button {
+    text-align: center;
+    margin: 0rem;
+    padding: 3rem 0 1rem 0;
+}
+
+section.ban2-services div.findmore.button a{
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    background-color: hsl(0, 100%, 0%);
+    padding: 1rem 0;
+    cursor: pointer;
+    transition: color 1.5s 150ms,
+}   
+
+section.ban2-services div.findmore.button a:hover {
+    color: hsl(0, 0, 100%);
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+/********************** TESTAMONIALS *****************/
+section.ban3-test {
+    padding: 2rem 2rem;
+}
+section.ban3-test div.headline3 {
+    padding: 2rem 0 4rem 0;
+}
+
+section.ban3-test div.headline3 h2 {
+    font-family: monospace;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+section.ban3-test div.bigbox3 {
+    display: inline-flex;
+    width: 100%;
+}
+
+div.stars ul li {
+    display: inline;
+    padding-right: 0.3rem;
+}
+
+div.stars ul li:last-child {
+    padding-right: 0px;
+}
+
+div.stars i {
+    color: white;
+    padding-right: 0.5rem;
+}
+
+div.stars i.checked {
+    color: #D5AB55;
+}
+
+section.ban3-test div.reviewbox {
+    width: 33%;
+    flex-grow: 1;
+    padding: 0 2rem 2rem 0;
+    
+}
+
+section.ban3-test div.reviewbox:last-child {
+    padding-right: 0;
+}
+
+section.ban3-test div.reviewbox div.test-text-con {
+    background: hsla(24, 50%, 56%, 1);
+    background: linear-gradient(315deg, hsla(24, 50%, 56%, 1) 10%, hsla(15, 33%, 32%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(24, 50%, 56%, 1) 10%, hsla(15, 33%, 32%, 1) 100%);
+    background: -webkit-linear-gradient(315deg, hsla(24, 50%, 56%, 1) 10%, hsla(15, 33%, 32%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C78355", endColorstr="#6E4537", GradientType=1 );
+    margin-top: 2rem;
+    height: 100%;
+    width: auto;
+    padding: 1rem;
+    box-shadow: 5px 5px #f5f5f5;
+    opacity: 0.9;
+}
+section.ban3-test div.reviewbox div.test-text-con:hover {
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 0px 0px;
+    transition: box-shadow 700ms ease-out;
+    opacity: 1;
+    
+}
+
+h3.name {
+    padding-bottom: 1rem;
+    font-family: 'Trispace', sans-serif;
+}
+
+p.review {
+    padding: 0 0.5rem 1rem 0;
+}
+
+p.review a {
+    text-decoration: none;
+}
+
+
+/******************* SERVICES **********************/
+h1 {
+    font-size: 2rem;
+   margin: 1em auto;
+   text-align: center;
+   font-family: 'Trispace', sans-serif;
+}
+
+.sdescription {
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    margin: auto;
+    padding: 1em;
+}
+
+hr {
+    height: 0.5rem;
+    width: 10rem;
+    background-color: #a6d1fd;
+    border-color: #a6d1fd;
+    margin: 2rem;
+    filter:blur(5px);
+}
+
+h2 {
+    margin: 1em auto;
+    text-align: center;
+    font-family: monospace;
+}
+
+.services {
+    width: 100%;
+    background-color:  #a6d1fd30;
+    padding: 5vh;
+    display: flex;
+    margin: auto;
+}
+
+.column {
+    flex: 1;
+    float: center;
+    width: 30%;
+    text-align: center;
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.sp {
+    width: 30%;
+    padding: 2rem;
+    margin: auto;
+}
+
+.sd {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.75rem;
+    padding: 1rem;
+}
+/*********************** CONTACT US BANNER ************************/
+
+form {
+    width: 80vw;
+    margin: auto;
+    padding: 2rem;
+}
+
+fieldset {
+    width: 100%;
+    background: #a6d1fd30;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+input, textarea {
+    margin: 1rem 0;
+    width: 90%;
+    background: transparent;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color:#a6d1fd30;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+
+input { 
+    min-height: 1rem;
+}
+
+textarea {
+    min-height: 10rem;
+}
+
+.input-fields {
+    display: flex;
+}
+
+.message, .subject {
+    width: 100%;
+    max-width: 500px;
+    padding-left: 2rem;
+}
+
+
+input[type="submit"] {
+    margin: 1em auto;
+    width: 10rem;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #a6d1fd30;
+    border-color: #a6d1fd30;}
+
+    input[type="submit"]:hover {
+        background: transparent;
+        color: white;
+        border: none;
+    }
+
+/***************************FOOTER***************************/
+
+footer {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 10px;
+}
