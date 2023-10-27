@@ -1,5 +1,5 @@
 let intro = document.querySelector('.splashscreen');
-let logo = document.querySelector('.logo-header');
+let logo = document.querySelector('.splashheader');
 let logoSpan = document.querySelectorAll('.splash');
 
 window.addEventListener('DOMContentLoaded', ()=>{
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
     },2000);
 
     setTimeout(()=>{
-        intro.computedStyleMap.top= '-100vh';
+        intro.style.top='-100vh';
     },2300)
 
 })
