@@ -77,6 +77,51 @@ header nav ul li:last-child {
     padding-right: 0.5rem;
 }
 
+@media only screen and (max-width: 550px) {
+    header {
+        position: relative;
+    }
+    header div.flexnav {
+        flex-direction: column;
+    }
+    header div.logo span {
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+        padding-bottom: 1.5rem;
+    }
+    header div.logo img {
+        display: none;
+        margin-right: 0rem;
+        }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav ul li {
+        display: block;
+        padding-bottom: 1rem;
+        padding-right: 0rem;
+    }
+    header nav ul li a {
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+    }
+    header nav ul li:last-child {
+        padding-right: 0rem;
+        padding-bottom: 0rem;
+    }
+    
+}   
+@media only screen and (max-width: 410px) {
+    header div.flexnav {
+        padding: 1rem 0;
+    }
+    body{
+        padding: 0 1rem;
+    }
+}
 /******************* INTRODUCTION *****************/
 section.intro {
     height: 600px;
@@ -86,6 +131,7 @@ section.intro {
 section.intro div.headline {
     position: relative;
     top: 30%;
+    width: 70%;
 }
 
 section.intro div.headline h1 {
@@ -100,11 +146,11 @@ section.intro div.headline h1 {
 section.intro div.subheadline {
     position: relative;
     top: 30%;
+    width: 80%;
 }
 
 section.intro div.subheadline p {
     padding: 0 2rem 2rem 2rem;
-    width: 75%;
     line-height: 200%;
     font-weight: bold;
     letter-spacing: 0.1em;
@@ -132,20 +178,88 @@ section.intro div.button a:hover {
     padding: 1rem;
 }
 
+@media only screen and (max-width: 760px) {
+    section.intro div.headline h1 {
+      font-size: 2rem;
+    }
+    section.intro {
+        min-height: 500px;
+        max-height: 700px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section.intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section.intro div.headline {
+        width: 100%;
+    }
+    section.intro div.headline h1 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-align: center;
+    }
+    section.intro div.subheadline {
+        width: 100%;
+    }
+    section.intro div.subheadline p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    section.intro div.button a {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+    section.intro div.headline, section.intro div.subheadline, section.intro div.button {
+        top: 20%;
+    }
+    section.intro div.subheadline 
+}
+@media only screen and (max-width: 450px) {
+  
+    section.intro div.headline h1 {
+      font-size: 1.5rem;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      letter-spacing: 0.2rem;
+    }
+    section.intro div.subheadline p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        padding: 0 1rem 2rem 1rem;
+    }
+    section.intro div.subheadline {
+        width: 100%;
+    }
+    section.intro div.button {
+        text-align: center;
+    }
+    body{
+        padding: 0 1rem;
+    }
+}
+
 /******************** TEMPLATES AND EXAMPLES ********************/
 section.ban2-services {
     padding: 2rem 2rem;
 }
 
 section.ban2-services div.headline2 {
-    padding: 2rem 0 4rem 0;
+    padding: 4rem 0 4rem 0;
 }
 
 section.ban2-services div.headline2 h2 {
-    font-family: monospace;
+    font-family: 'Trispace', sans-serif;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin-bottom: 0;
 }
 
 section.ban2-services div.img-con {
@@ -180,6 +294,9 @@ div.bigbox2.long {
 
 div.text-con {
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 div.text-con h2.title {
@@ -212,6 +329,50 @@ section.ban2-services div.findmore.button a:hover {
     padding: 1rem;
 }
 
+@media only screen and (max-width: 760px) {
+    section.ban2-services div.headline2 h2 {
+        font-size: 2rem;
+    }
+    div.flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    div.bigbox2 {
+        width: 100%;
+        margin: 0;
+    }
+    div.bigbox2.long {
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section.ban2-services div.headline2 {
+        padding: 2rem 0;
+    }
+    
+}
+@media only screen and (max-width: 450px) {
+    section.ban2-services div.headline2 h2 {
+        font-size: 1.5rem;
+    }
+    section.ban2-services {
+        padding: 1rem 1rem;
+    }
+    div.text-con h2.title {
+        font-size: 1rem;
+    }
+    div.text-con p.description {
+        font-size: 0.8rem;
+    }
+    section.ban2-services div.findmore.button {
+        padding-top: 2rem;
+    }
+    section.ban2-services div.findmore.button a {
+        font-size: 1.5rem;
+    }
+}
 /********************** TESTAMONIALS *****************/
 section.ban3-test {
     padding: 2rem 2rem;
@@ -223,9 +384,9 @@ section.ban3-test div.headline3 {
 section.ban3-test div.headline3 h2 {
     font-family: monospace;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.4rem;
 }
 
 section.ban3-test div.bigbox3 {
@@ -274,6 +435,7 @@ section.ban3-test div.reviewbox div.test-text-con {
     padding: 1rem;
     box-shadow: 5px 5px #f5f5f5;
     opacity: 0.9;
+    border-radius: 10px;
 }
 section.ban3-test div.reviewbox div.test-text-con:hover {
     position: relative;
@@ -286,6 +448,7 @@ section.ban3-test div.reviewbox div.test-text-con:hover {
 }
 
 h3.name {
+    font-size: 1.5rem;
     padding-bottom: 1rem;
     font-family: 'Trispace', sans-serif;
 }
@@ -298,13 +461,45 @@ p.review a {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 760px) {
+    section.ban3-test div.headline3 h2 {
+        font-size: 2rem;
+    }
+    section.ban3-test div.bigbox3 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section.ban3-test div.reviewbox {
+        width: 100%;
+    }
+    section.ban3-test div.reviewbox:last-child {
+        padding-right: 2rem;
+    }
+}
+@media only screen and (max-width: 450px) {
+    section.ban3-test {
+        padding: 1rem 1em;
+    }
+    section.ban3-test div.headline3 h2 {
+        font-size: 1.5rem;
+    }
+    h3.name {
+        font-size: 1rem;
+    }
+    p.review {
+        font-size: 0.8rem;
+    }
+}
 
 /******************* SERVICES **********************/
 h1 {
-    font-size: 2rem;
+   font-size: 3rem;
+   letter-spacing: 0.4rem;
    margin: 1em auto;
    text-align: center;
    font-family: 'Trispace', sans-serif;
+   text-transform: uppercase;
 }
 
 .sdescription {
@@ -324,7 +519,7 @@ hr {
     filter:blur(5px);
 }
 
-h2 {
+div.row h2 {
     margin: 1em auto;
     text-align: center;
     font-family: monospace;
